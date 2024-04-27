@@ -440,7 +440,7 @@ export class NVENCConfig extends BaseHWConfig {
   }
 
   getBaseInputOptions() {
-    return ['-init_hw_device cuda=cuda:0', '-filter_hw_device cuda'];
+    return ['-init_hw_device cuda=cuda:0', '-filter_hw_device cuda', '-hwaccel'];
   }
 
   getBaseOutputOptions(target: TranscodeTarget, videoStream: VideoStreamInfo, audioStream?: AudioStreamInfo) {
